@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Generic - Phantom by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>What are you looking for?</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="resume.html">Resume</a></li>
+							<li><a href="talks.html">Talks & Awards</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>DocFinder</h1>
+							<img src="images/docfinder.png" alt="hgraph" class = "center" style="width:630px;height:500px;">
+							<p>DocFinder is an application that helps users to find a doctor in their area who takes their insurance through voice queries. We developed this app because we found that it was difficult to find a new doctor by simply Googling.
+							Users can click the microphone button, and ask for a doctor based off of their specialty, location, insurance, and spoken languages. An example query would be like "Find me a dermatologist who takes Aetna near 215 South St. Waltham, MA".
+						The app sends this utterance to the <a href="https://dialogflow.com/">DialogFlow API</a>, which parses the string for particular parameters. In this case, for the kind of doctor, the address, and the insurance company. The API returns a JSON object with these parameter values. These
+					values are then sent to the <a href="https://developer.betterdoctor.com/">BetterDoctor API</a>, a doctor database. This API then returns a JSON object of doctors that fit the specified criteria. These doctors are presented to the user as a table of doctors they can chose from ordered by proximity.
+				</p><img src="images/search_results.png" alt="hgraph" class = "center" style="width:900px;height:500px;"><p>Each doctor links to a modal with a doctor profile that shows a biography, addresses of their practices, and the insurances that they take. Some profiles also included a pie chart of payments recieved from pharmaceutical companies by using the <a href="https://openpaymentsdata.cms.gov/">Open Payments Data API</a>.
+			Each doctor also has a corresponding location marker on <a href="https://developers.google.com/maps/">Google Maps</a> to show the locations of the doctors in regards to the user's location. </p><img src="images/modal.png" alt="hgraph" class = "center" style="width:900px;height:500px;"><p>Users can also make profiles that tracked favorited doctors and their medication prescriptions. Users can readily search for drug information
+		in the included drug information search engine utilising the <a href="https://www.iodine.com/api">Iodine API</a>.<img src="images/profile.png" alt="hgraph" class = "center" style="width:900px;height:500px;"></p>
+							<p>Take a look at the <a href="https://github.com/HealthcareSquad/Healthcare-App">Github Repository</a>!</p>
+							<h2>Awards</h2>
+						  <p><b>Best Speech Application</b> - AVIOS Speech Application Competition 2018</p>
+							<h2>Media</h2>
+							<a href="http://betterdoctor.com/blog/docfinder/">Student Feature Case Study: Provider Data powers Doctor search with speech recognition
+							</a>
+							<br>
+							<br>
+							<a href="http://www.avios.org/">AVIOS Speech Application Competition</a>
+							<br>
+							<br>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+
+							<section>
+								<h2>Get in touch</h2>
+								<ul class="icons">
+									<li><a href="https://twitter.com/codesforaday" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="https://www.facebook.com/profile.php?id=100008285211866" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
+									<li><a href="https://github.com/csuncodes" class="icon style2 fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://www.linkedin.com/in/claire-sun/" class="icon style2 fa fa-linkedin-square"><span class="label">LinkedIn</span></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
